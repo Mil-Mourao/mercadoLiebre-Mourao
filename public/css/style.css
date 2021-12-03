@@ -1,0 +1,362 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #ebebeb;
+}
+/*Header*/
+.main-header {
+  background-color: #eac926;
+  overflow-x: hidden;
+  height: auto;
+}
+
+.main-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 50vw;
+  max-width: 200px;
+  padding-top: 0.5rem;
+}
+
+.barrita {
+  display: flex;
+}
+
+.barrita input {
+  height: 2rem;
+  width: 30vw;
+  padding-left: 5px;
+  border: solid 1px #ebebeb;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.barrita i button {
+  position: absolute;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.lupa {
+  color: #666;
+  position: relative;
+  background-color: white;
+  right: 25px;
+  padding-left: 4px;
+  top: 1px;
+  margin: auto;
+  border-left: solid 1px #ebebeb;
+}
+
+.slogan {
+  font-weight: 400;
+  text-align: center;
+  width: 100vw;
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin: 1rem;
+}
+
+.burga {
+  background-color: #1259c3;
+  color: #fff;
+  display: block;
+  max-width: 50px;
+  padding: 15px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+}
+
+.main-nav {
+  display: none;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.banner {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/*Main*/
+main {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+article {
+  margin: 10px 0;
+  background-color: white;
+}
+
+.foto {
+  max-width: 90vw;
+}
+
+.texto {
+  border-top: 1px solid #ebebeb;
+  margin: 15px 15px 15px 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.desc,
+.disc {
+  font-size: 16px;
+}
+
+.precio {
+  font-size: 18px;
+  width: 30%;
+}
+
+.disc {
+  width: 70%;
+  color: #39b54a;
+  position: relative;
+}
+
+.desc {
+  display: none;
+}
+
+.camion {
+  color: #39b54a;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 80%;
+  top: -15px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+}
+
+footer i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
+@media (min-width: 768px) {
+  /*Header*/
+  .main-header-top {
+    justify-content: space-between;
+  }
+
+  .slogan {
+    width: 30vw;
+    text-align: right;
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .burga {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    /*max-width: 80%;*/
+  }
+
+  .main-nav ul {
+    display: flex;
+  }
+
+  .main-nav li {
+    padding: 0, 5px;
+  }
+
+  .main-nav a {
+    font-size: 1rem;
+  }
+  /*Main*/
+  article {
+    /*box-shadow: 0px 0px 10px rgb(100, 100, 100);*/
+    max-width: 40vw;
+  }
+
+  article :nth-child(1) {
+    max-width: 40vw;
+  }
+
+  .visita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .visita article {
+    width: 50%;
+  }
+
+  .ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .ofertas article {
+    width: 50%;
+  }
+
+  .siteNav {
+    display: flex;
+  }
+
+  .loginNav {
+    display: flex;
+  }
+
+  .desc {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-header-top,
+  .main-nav {
+    max-width: 90vw;
+    margin: auto;
+  }
+
+  .main-header-top {
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 300px;
+    width: 30vw;
+  }
+
+  .slogan {
+    max-width: none;
+    text-align: right;
+    font-size: 18px;
+    width: 30vw;
+  }
+
+  .main-nav {
+    margin-top: 2vh;
+  }
+
+  .main-nav a {
+    font-size: 16px;
+  }
+
+  .main-nav li {
+    margin: 0, 15px;
+  }
+
+  article :nth-child(1) {
+    max-width: 20vw;
+  }
+
+  article {
+    max-width: 20vw;
+  }
+
+  article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  article:hover .camion {
+    transform: rotateZ(270deg);
+  }
+
+  .desc {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer1 {
+    width: 30vw;
+  }
+
+  #footer2 {
+    width: 30vw;
+  }
+
+  #footer3 {
+    width: 30vw;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 2rem;
+    width: 100vw;
+  }
+  /*.copyright {
+    display: inline-block;
+  }*/
+
+  .iconoFooter:hover {
+    color: #03264c;
+  }
+
+  .producto:hover .desc {
+    display: block;
+  }
+}

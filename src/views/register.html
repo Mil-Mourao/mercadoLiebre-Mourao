@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/register.css" />
+    <title>Registrate</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <section class="main-header-top">
+        <img
+          src="/images/logo-mercado-liebre.svg"
+          alt="logo de mercado liebre"
+          class="logo"
+        />
+        <form action="/" method="post" class="barrita">
+          <label for="search_bar"></label>
+          <input
+            type="text"
+            name="search_bar"
+            id="search_bar"
+            placeholder="Buscar productos, marcas "
+          />
+          <i class="fas fa-search lupa"><button type="submit"></button></i>
+        </form>
+        <h2 class="slogan">
+          <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
+          tarjeta de crédito
+        </h2>
+      </section>
+      <a href="" class="burga"><i class="fas fa-bars"></i></a>
+      <nav class="main-nav">
+        <ul class="nav1">
+          <li><a href="">Ofertas</a></li>
+          <li><a href="">Tiendas Oficiales</a></li>
+          <li><a href="">Vender</a></li>
+          <li><a href="">Ayuda</a></li>
+        </ul>
+        <ul class="nav2">
+          <li>
+            <a href="/register"
+              >Creá tu Cuenta<i class="fa-regular fa-address-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login"
+              >Ingresá<i class="fa-solid fa-right-to-bracket"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              >Mis Compras<i class="fa-solid fa-basket-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <picture>
+        <img src="/images/img-home-banner.jpg" alt="banner" class="banner" />
+      </picture>
+    </header>
+    <main>
+      <form action="/registrarse" method="post">
+        <fieldset>
+          <legend class="noShow">Nombre y Apellido</legend>
+          <label class="noShow" for="">Nombre y Apellido</label>
+          <input required type="text" name="nombre" placeholder="Nombre" />
+        </fieldset>
+
+        <fieldset>
+          <legend class="noShow">Nombre de Usuario</legend>
+          <label class="noShow" for="">Nombre de Usuario</label>
+          <input
+            required
+            type="text"
+            name="username"
+            placeholder="Nombre de Usuario"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend class="noShow">Email</legend>
+          <label class="noShow" for="">E-mail</label>
+          <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Fecha de Nacimiento</legend>
+          <label class="noShow" for="cumple" class="tituloForm"
+            >Fecha de Nacimiento</label
+          >
+          <input required type="date" name="cumple" />
+        </fieldset>
+
+        <fieldset>
+          <legend class="noShow">Domicilio</legend>
+          <label class="noShow" for="casa">Domicilio</label>
+          <input required type="text" name="casa" placeholder="Domicilio" />
+        </fieldset>
+        <fieldset class="radios">
+          <legend>Perfil del Usuario</legend>
+          <input required type="radio" name="comprador" id="buyer" />
+          <label for="buyer">Comprador</label>
+          <input required type="radio" name="comprador" id="seller" />
+          <label for="seller">Vendedor</label>
+        </fieldset>
+
+        <fieldset class="check">
+          <legend class="intereses">Intereses</legend>
+          <div class="boxAndLabel">
+            <input type="checkbox" name="categoria" value="electro" />
+            <label for="electro">Electro</label>
+          </div>
+          <div class="boxAndLabel">
+            <input type="checkbox" name="categoria" value="moda" />
+            <label for="moda">Moda</label>
+          </div>
+          <div class="boxAndLabel">
+            <input type="checkbox" name="categoria" value="hogar" />
+            <label for="hogar">Hogar</label>
+          </div>
+          <div class="boxAndLabel">
+            <input type="checkbox" name="categoria" value="toys" />
+            <label for="toys">Juguetería</label>
+          </div>
+          <div class="boxAndLabel">
+            <input type="checkbox" name="categoria" value="vida" />
+            <label for="vida">Vida Sana</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="pfp">
+          <legend>Foto del Usuario</legend>
+          <label class="noShow" for="foto">Foto de Usuario</label>
+          <input required type="file" name="foto" id="foto" />
+        </fieldset>
+
+        <fieldset class="contra">
+          <legend class="noShow">Contraseña</legend>
+          <label class="noShow" for="pass">Contraseña</label>
+          <input
+            required
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Contraseña"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend class="noShow">Confirmar Contraseña</legend>
+          <label class="noShow" for="passConfirm">Confirmar Contraseña</label>
+          <input
+            required
+            type="password"
+            name="passConfirm"
+            id="passConfirm"
+            placeholder="Confirmar Contraseña"
+          />
+        </fieldset>
+
+        <fieldset class="buttons">
+          <legend class="noShow">Botones del Formulario</legend>
+          <button type="submit" class="button1">Enviar</button>
+          <button type="reset" class="button2">Borrar</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <section id="footer1">
+        <i class="fa-solid fa-credit-card iconoFooter"></i>
+        <h3>Pagá con tarjeta o en efectivo</h3>
+        <p>
+          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+          efectivo en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </section>
+      <section id="footer2">
+        <i class="fa-solid fa-gift iconoFooter"></i>
+        <h3>Envío gratis desde $ 2.500</h3>
+        <p>
+          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+          miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </section>
+      <section id="footer3">
+        <i class="fa-solid fa-user-shield iconoFooter"></i>
+        <h3>Seguridad, de principio a fin</h3>
+        <p>
+          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+          hacer, porque estás siempre protegid@.
+        </p>
+      </section>
+      <section class="copyright">
+      <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+    </section>
+  </body>
+</html>
+
+<!-- Minimo 8 caracteres
+Maximo 15
+Al menos una letra mayúscula
+Al menos una letra minucula
+Al menos un dígito
+No espacios en blanco
+Al menos 1 caracter especial -->
