@@ -17,16 +17,23 @@
   <body>
     <header class="main-header">
       <section class="main-header-top">
-        <img
-          src="/images/logo-mercado-liebre.svg"
-          alt="logo de mercado liebre"
-          class="logo"
-        />
+        <a href="/">
+          <img
+            src="/images/logo-mercado-liebre.svg"
+            alt="logo de mercado liebre"
+            class="logo"
+          />
+        </a>
         <form action="/" method="post" class="barrita">
           <label for="search_bar"></label>
-          <input type="text" name="search_bar" id="search_bar" placeholder="Buscar productos, marcas " >
-            <i class="fas fa-search lupa"><button type="submit"></button></i>
-      </form>
+          <input
+            type="text"
+            name="search_bar"
+            id="search_bar"
+            placeholder="Buscar productos, marcas "
+          />
+          <i class="fas fa-search lupa"><button type="submit"></button></i>
+        </form>
         <h2 class="slogan">
           <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin
           tarjeta de crédito
@@ -47,7 +54,9 @@
             ></a>
           </li>
           <li>
-            <a href="/login">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="/login"
+              >Ingresá<i class="fa-solid fa-right-to-bracket"></i
+            ></a>
           </li>
           <li>
             <a href=""
@@ -57,7 +66,7 @@
         </ul>
       </nav>
       <picture>
-        <img src="/images/img-home-banner.jpg" alt="banner" class="banner">
+        <img src="/images/img-home-banner.jpg" alt="banner" class="banner" />
       </picture>
     </header>
     <main>
@@ -85,8 +94,8 @@
           />
         </fieldset>
         <fieldset>
-            <legend>Enviar</legend>
-            <button type="submit" id="loginButton">Enviar</button>
+          <legend>Enviar</legend>
+          <button type="submit" id="loginButton">Enviar</button>
         </fieldset>
       </form>
     </main>
